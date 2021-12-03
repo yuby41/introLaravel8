@@ -22,8 +22,8 @@ class CreateCoursesTable extends Migration
             $table->string('image');
             $table->text('description');
             $table->timestamps();
-            $table->foreign('user_id')->reference('id')->on('users');
-            $table->foreign('category_id')->reference('id')->on('categories');
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('category_id')->references('id')->on('categories');
         });
     }
 
