@@ -1138,9 +1138,16 @@ select {
 .col-span-1 {
 	grid-column: span 1 / span 1;
 }
+.col-span-2 {
+	grid-column: span 2 / span 2;
+}
 .mx-auto {
 	margin-left: auto;
 	margin-right: auto;
+}
+.my-8 {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 .ml-3 {
 	margin-left: 0.75rem;
@@ -1216,6 +1223,9 @@ select {
 }
 .-mt-px {
 	margin-top: -1px;
+}
+.ml-auto {
+	margin-left: auto;
 }
 .block {
 	display: block;
@@ -1375,6 +1385,9 @@ select {
 }
 .grid-cols-3 {
 	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.grid-cols-2 {
+	grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .flex-col {
 	flex-direction: column;
@@ -1553,6 +1566,10 @@ select {
 	--tw-bg-opacity: 1;
 	background-color: rgba(30, 64, 175, var(--tw-bg-opacity));
 }
+.bg-gray-300 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(209, 213, 219, var(--tw-bg-opacity));
+}
 .bg-opacity-25 {
 	--tw-bg-opacity: 0.25;
 }
@@ -1709,6 +1726,10 @@ select {
 .text-3xl {
 	font-size: 1.875rem;
 	line-height: 2.25rem;
+}
+.text-4xl {
+	font-size: 2.25rem;
+	line-height: 2.5rem;
 }
 .font-medium {
 	font-weight: 500;
