@@ -13,7 +13,7 @@
                     @if($post->free)
                     <span 
                         class="text-xs text-gray-500 font-semibold bg-gray-300 px-2 rounded-full ml-auto"
-                    >Gratis</span>
+                    >Free</span>
                     @endif
                 </li>
                 @endforeach
@@ -39,7 +39,7 @@
             </div>
             <div class="grid grid-cols-2 gap-4 my-8">
                 @foreach($course->similar() as $course)
-                    <x-course-card :course="$course"/>
+                    <x-course-card :course="$course" />
                 @endforeach
             </div>
         </div>        
